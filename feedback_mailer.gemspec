@@ -8,12 +8,14 @@ Gem::Specification.new do |gem|
   gem.version       = FeedbackMailer::VERSION
   gem.authors       = ["Андрей [ws70]"]
   gem.email         = ["railscode@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = "Feedback Mailer for Rails app"
+  gem.summary       = "Feedback Mailer for Rails app"
+  gem.homepage      = "https://github.com/vav/feedback_mailer"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+
+  gem.add_dependency "rails", ">= 2.3.12"
 end
