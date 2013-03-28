@@ -1,0 +1,9 @@
+ru:
+  feedback_mailer:
+    without_theme: Без темы
+    without_sender: Без отправителя
+    your_letter_sent: Ваше письмо отправлено
+    your_letter_is_not_sent: Ваше письмо не отправлено, текст сообщения не может быть пустым
+    meta_title: Обратная связь
+    email_to_answer: Email для ответа
+    letter_from_site: Letter from site

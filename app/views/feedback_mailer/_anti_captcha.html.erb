@@ -1,0 +1,9 @@
+<% content_for :javascripts do %>
+  <script type='text/javascript'>
+    $(function(){
+      $("form.simple").submit(function(){
+        $(this).attr("action", "/service/feedback");
+      });
+    });
+  </script>
+<% end %>

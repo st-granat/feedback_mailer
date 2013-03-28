@@ -1,0 +1,24 @@
+<%= form_tag "/create_feedback", :class => "simple", :method => :post do %>
+  <p>
+    <label for="title">Тема</label>
+    <span class="required">*</span>
+    <% if !FeedbackMailer.themes.blank? %>
+      <%= select_tag 'theme', FeedbackMailer.themes %>
+    <% else %>
+      <%= text_field_tag 'theme', nil %>
+    <% end %>
+  </p>
+  <p>
+    <label for="title">Email</label>
+    <span class="required">*</span>
+    <%= text_field_tag 'sender', nil %>
+  </p>
+  <p>
+    <label for="title">Текст</label>
+    <span class="required">*</span>
+    <%= text_area_tag 'body', nil, :rows => 10, :cols => 80 %>
+  </p>
+  <p>
+    <%= submit_tag 'Отправить', :class => "btn" %>
+  </p>
+<% end %>

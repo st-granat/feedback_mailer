@@ -1,0 +1,9 @@
+ru:
+  feedback_mailer:
+    without_theme: Without theme
+    without_sender: Without sender
+    your_letter_sent: Your letter sent
+    your_letter_is_not_sent: Your letter is not sent
+    meta_title: Feedback
+    email_to_answer: Email to answer
+    letter_from_site: Letter from site
